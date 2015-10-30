@@ -69,8 +69,7 @@ WITH_ADDITIONAL_VMS ?= "--with-additional-vms=cacao,jamvm"
 
 # OpenJDK supports parallel compilation but uses a plain number for this.
 # In OE we have PARALLEL_MAKE which is the actual option passed to make,
-# e.g. "-j 4".
-
+# e.g. "JOBS=4".  
 OPENJDK_PARALLEL_MAKE := "${PARALLEL_MAKE}"
 PARALLEL_MAKE =  ""
 
